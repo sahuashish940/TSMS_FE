@@ -1,7 +1,7 @@
 
 # Teacher Student Management System (TSMS)
 
-[TSMS.onrender.com](https://tsms-fe.vercel.app/)
+[Visit : TSMS](https://tsms-fe.vercel.app/)
 
 A Teacher Student Management System for managing notes, attendance, internal marks, and schedules.
 
