@@ -1,139 +1,114 @@
-# TSMS
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+# Teacher Student Management System (TSMS)
 
-[TSMS.onrender.com](https://kollege.onrender.com)
+[TSMS.onrender.com](https://tsms-fe.vercel.app/)
 
-A College Based Data Management System.
+A Teacher Student Management System for managing notes, attendance, internal marks, and schedules.
 
-- There are two types of roles: Staff[Teacher,HOD] and Student.
+## Roles and Login Credentials
 
-## Login Details
+### Teacher (Staff)
 
-PS: BE KIND :)
+- **Username:** Delphine  
+- **Password:** Delphine123  
 
-### Teacher [staff]
+Teacher can:
 
-**username:** Delphine  
-**pwd:** Delphine123
+- Add or edit Notes
+- Manage Attendance
+- Update Internal Marks
+- Create and edit Time Schedules
 
-Teacher can add or edit
+### HOD (Head of Department)
 
-- Notes
-- Attendance
-- Internal Marks
-- Time Schedule
+- **Username:** Moriah  
+- **Password:** Moriah123  
 
-### HOD (Head of Department) [staff]
+HOD has all the permissions of a Teacher and can additionally:
 
-**username:** Moriah  
-**pwd:** Moriah123
-
-HOD can do everything Teacher can.  
-HOD can also
-
-- Approve new Teacher
-- Add New Paper
+- Approve new Teacher registrations
+- Add new Subjects (Papers)
 
 ### Student
 
-**username:** Bret  
-**pwd:** Bret
+- **Username:** Bret  
+- **Password:** Bret  
 
-Or register a new Student and Login.  
-You can also login with the First Name of any student in the class.
+Or register as a new student to create your own account.  
+Students can:
 
-Student can view
+- View Notes
+- Check Attendance and Internal Marks (added by Teachers)
+- Join or leave Subjects (Papers)
 
-- Notes
-- Attendance
-- Internal Marks
-
-Attendance and Marks needs to be added by the teacher first.  
-Student can also join or leave a Paper(Subject).
+---
 
 ## Tech Stack
 
-**Client:** React, TailwindCSS
+- **Frontend:** React, TailwindCSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB, Mongoose  
 
-**Server:** NodeJS, ExpressJS
+---
 
-**Database:** MongoDB, Mongoose
+## Features
 
-## Other Features
+- User roles: Teacher, HOD, and Student
+- Dark mode for improved accessibility
+- Mobile responsive design for seamless usage across devices
+- Profile management for all users
 
-- Profile
-- Dark Theme
-- Mobile Responsive
+---
 
-## Setting Up
+## How to Set Up Locally
 
 Clone the project:
 
-```bash
-  git clone https://github.com/iafthab/kollege.git
-```
+\`\`\`bash
+git clone https://github.com/your-username/tsms.git
+\`\`\`
 
-Change Directory:
+Change directory:
 
-```bash
-  cd TSMS
-```
+\`\`\`bash
+cd TSMS
+\`\`\`
 
 Install dependencies:
 
-```bash
-  npm install
-```
+\`\`\`bash
+npm install
+\`\`\`
 
-Finally,
+Run the application:
 
-```bash
-  npm start
-```
+\`\`\`bash
+npm start
+\`\`\`
 
-### Using your own server and database
+To use your own backend server, update the base URL in \`src/config/api/axios.js\`:
 
-The requests are send to the hosted server by default.  
-if you want to use your own server and database, follow the steps [here](https://github.com/iafthab/kollege_api#readme) to step up one.
-
-Then, go to src/config/api/axios.js. change the baseURL to your backend address:
-
-```javascript
+\`\`\`javascript
 baseURL: "http://localhost:3500";
-```
+\`\`\`
 
-```javascript
-baseURL: "https://example.address.com";
-```
+---
 
-## RoadMap
+## Roadmap
 
-- Add admin 😴
-- Cache Queries
-- Paginate Queries
+- Add admin functionality
+- Implement query caching
+- Add pagination for queries
+
+---
 
 ## Contact
 
-Errors are bound to happen and the documentation is incomplete.  
-I'd love to hear feedbacks and suggestions.  
-In any case, start a conversation: [LinkedIn](https://www.linkedin.com/in/iafthab) [Telegram](https://tttttt.me/LazySage01) [Mail](mailto:afthabiqbal123@gmail.com)(Make sure your mail doesn't get flagged as spam/junk)  
-Thank You ❤️.
+I’m always open to feedback and suggestions to improve this project! Feel free to reach out:
 
-## Acknowledgements
+- **LinkedIn:** [Ashish sahu](https://www.linkedin.com/in/ashishsahudev)  
+- **Email:** [sahuashish940@gmail.com](mailto:sahuashish940@gmail.com)  
 
-- [MERN Stack Tutorial](https://www.youtube.com/watch?v=CvCiNeLnZ00&pp=ygUOZGF2ZSBncmF5IGZ1bGw%3D) by [Dave Gray](https://github.com/gitdagray)
-- [React Tutorial](https://www.youtube.com/watch?v=RVFAyFWO4go&pp=ygUOZGF2ZSBncmF5IGZ1bGw%3D) by [Dave Gray](https://github.com/gitdagray)
-- [React Icons](https://react-icons.github.io/react-icons/search)
-- [React Router](https://reactrouter.com/en/main)
-- [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
-- [axios](https://axios-http.com/)
-- [README Editor](readme.so)
+Thank you for your support! ❤️  
 
-## Related
-
-[kollege_api](https://github.com/iafthab/kollege_api)
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+---
