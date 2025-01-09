@@ -65,7 +65,7 @@ Students can:
 Clone the project:
 
 \`\`\`bash
-git clone https://github.com/your-username/tsms.git
+git clone https://github.com/sahuashish940/tsms.git
 \`\`\`
 
 Change directory:
